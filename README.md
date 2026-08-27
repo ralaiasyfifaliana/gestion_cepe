@@ -127,10 +127,3 @@ par les classes `mg.cepe.pdf.PdfDocument` et `mg.cepe.pdf.PdfTableWriter`,
 qui écrivent directement la syntaxe PDF (texte, tableaux, pagination
 automatique, encodage des accents français). Aucune bibliothèque externe
 (type OpenPDF/iText) n'est nécessaire.
-
-## 7. Remarque sur le schéma
-
-Le schéma de la table `ELEVE` (`numEleve, numEcole, Nom, prenom`) ne
-comporte pas de date de naissance ; elle n'a donc pas été ajoutée à la base
-ni aux documents PDF générés, afin de rester strictement conforme aux
-tables demandées.
