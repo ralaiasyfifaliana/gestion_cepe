@@ -23,24 +23,21 @@ gestion-cepe/
 │   ├── pdf/                    -> moteur PDF maison (sans dépendance externe)
 │   └── ui/                     -> interface graphique Swing moderne
 ├── lib/postgresql.jar       -> pilote JDBC PostgreSQL (seule dépendance)
-├── sql/create_cepe_db.sql   -> script de création de la base (déjà exécuté chez vous)
+├── sql/create_cepe_db.sql   -> script de création de la base
 ├── build.sh / build.bat     -> compilation (javac direct)
 └── run.sh   / run.bat       -> lancement (java direct)
 ```
 
 Aucun dossier `src/` ni `target/` : le code source est directement sous
-`mg/cepe/...`, et la compilation produit un dossier `classes/` (au lieu de
-`target/`).
+`mg/cepe/...`, et la compilation produit un dossier `classes/`
 
 ## 2. Prérequis
 
 - JDK 17 ou plus récent
-- PostgreSQL démarré, avec la base **CEPE** déjà créée (c'est votre cas —
-  le script `sql/create_cepe_db.sql` est fourni pour référence uniquement)
+- PostgreSQL démarré, avec la base **CEPE** déjà créée (`sql/create_cepe_db.sql`)
 - Identifiants utilisés par l'application (dans `mg/cepe/data/DBConnection.java`) :
   - URL : `jdbc:postgresql://localhost:5432/CEPE`
   - Utilisateur : `postgres`
-  - Mot de passe : `mdp`
 
 ## 3. Compilation
 
